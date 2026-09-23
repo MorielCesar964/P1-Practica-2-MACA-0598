@@ -1,0 +1,44 @@
+<!DOCTYPE html> <!-- Declara que este documento sigue el estándar HTML5 -->
+<html lang="en"> <!--Establece el ingles como idioma principal-->
+<head>
+    <meta charset="UTF-8"> <!-- Define la codificación UTF-8 para procesar acentos, eñes y caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ajusta la escala para que la página sea adaptable (responsive) en móviles -->
+    <title>Imagenes en HTML</title> <!-- Define el título que aparece en la pestaña del navegador -->
+</head>
+<body>
+
+    <!-- Encabezado de 2do nivel, funciona como el subtitulo que dara lugar al texto-->
+    <h2>Imagenes en HTML</h2>
+
+    <!-- Subencabezado de nivel 3: Define la primera sección -->
+    <h3>Locales</h3>
+    <!-- 
+      Función de "img" inserta una imagen en la página.
+      - la funcion "src" busca la ruta de la imagen.
+      - la funcion "alt" nos deja poner un texto para cuando la imagen no cargue en la pagina-->
+    <img src="caritas.png" alt="Imagen de carita feliz">
+
+    <!-- Subencabezado de nivel 3: Define la segunda sección -->
+    <h3>Locales redismensionado</h3>
+     <!--"src=" imagenes/carita.png: entra en una carpeta llamada "imagenes" para poder buscar la imagen.
+      - Atributo 'width="200"': Cambia el ancho de la imagen a 200 píxeles.
+      - Atributo 'height="100"': Cambia el alto de la imagen a 100 píxeles-->
+    <img src="imagenes/carita.png" alt="" width="200" height="100">
+
+    <!-- Subencabezado de nivel 3: Define la tercera sección -->
+    <h3>Desde internet</h3>
+      <!--src="https://..." es una ruta absoluta que se usa para buscar una imagen externa que se encuentra alojada en otro servidor.
+      - 'width' y 'height': Redimensionan la imagen externa a 200x200 píxeles.-->
+    <img src="https://st2.depositphotos.com/2172759/11751/v/950/depositphotos_117511772-stock-illustration-happy-face-isolated-on-white.jpg" 
+    width="200" height="200"
+    alt="">
+
+    <!-- Subencabezado de nivel 3: Define la cuarta sección -->
+    <h3>Animaciones</h3> 
+      <!--se esat cargando una imagen en formato "gif",
+      - HTML usa la misma etiqueta <img> tanto para imágenes estáticas (PNG, JPG) como para imágenes animadas (GIF)-->
+    <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExejMydmVybzBiY3lkdWd1Nnp1MzJiMXA3Ymt3czE3NGp1NDZuZDg5YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/tXL4FHPSnVJ0A/giphy.gif" 
+    width="200" height="200"
+    alt="">
+</body>
+</html>
