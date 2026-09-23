@@ -1,0 +1,126 @@
+<!DOCTYPE html> <!-- Declara que este documento es HTML5 -->
+<html lang="en"> <!-- Declara el inlges como el idioma principal-->
+<head>
+    <meta charset="UTF-8"> <!-- Establece caracteres especiales-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--adapta el tamaño a dispositivos moviles-->
+    <title>Tipos de listas en HTML</title> <!-- Título visible en la pestaña del navegador -->
+</head>
+<body>
+    <!-- SECCIÓN DE CONTENIDO VISIBLE -->
+
+    <!-- titulo general-->
+    <h1>Tipos de listas</h1>
+
+    <!-- encabezado de 2do nivel para la primera sección -->
+    <h2>Listas ordenadas</h2>
+    
+    <!-- Párrafo que explica qué es una lista ordenada -->
+    <p>Una lista ordenada es una serie de elementos los cuales 
+        tendran una numeracion de acuerdo al numeros de elementos.
+    </p>
+
+   
+    <ol><!-- la funcion de "ol" es enumerar automaticamente los elementos de la lista-->
+        <!-- Función de <li> (List Item): Representa un elemento indivisible dentro de la lista -->
+        <li>Luna Arias </li>
+        <li>Franco Andrea</li>
+        <li>Granados Evelyn</li>
+    </ol>
+
+    <!-- Encabezado de 2do nivel-->
+    <h2>Listas no ordenadas</h2>
+
+    <!-- Párrafo explicativo -->
+    <p>Las listas no ordenadas no utilizan ninguna numeracion delante 
+        de cada item sino un pequeño elemento grafico
+    </p>
+    <ul><!-- Crea una lista no ordenada, no mjuestra numeros-->
+        <!-- Cada <li> genera un elemento con su respectiva viñeta -->
+        <li>C</li>
+        <li>C++</li>
+        <li>Python</li>
+    </ul>
+
+    <!-- Subencabezado (nivel 2) para la tercera sección -->
+    <h2>Lista de definiciones</h2>
+
+    <!-- Párrafo explicativo -->
+    <p>Se utiliza para asociar un termino y la definicion del mismo</p>
+
+    <!-- 
+      Función de <dl> (Description List): Agrupa un conjunto de términos y sus correspondientes descripciones.
+    -->
+    <dl>
+        <!-- Función de <dt> (Description Term): Define el término o palabra a describir -->
+        <dt>C++</dt>
+        <!-- Función de <dd> (Description Details): Proporciona la definición o explicación del término <dt> anterior -->
+        <dd>
+            Es un lenguaje de programacion, diseñado a mediados de los años
+            1980 como extension del lenguaje de programacion C.
+        </dd>
+
+        <!-- Segundo término de la lista -->
+        <dt>Java</dt>
+        <!-- Segunda definición -->
+        <dd>
+            Es un lenguaje de programacion orientado a objetos desarrollado
+            por Sun Microsystem a principios de los 90.
+        </dd>
+
+        <!-- Tercer término de la lista -->
+        <dt>JavaScript</dt>
+        <!-- Tercera definición -->
+        <dd>
+            Es un lenguaje interpretado, es decir que no requiere compilacion,
+            utilizado principalmente en paginas web, con una sintaxis similar
+            al lenguaje de programacion C.
+        </dd>
+    </dl>
+
+    <!-- Subencabezado (nivel 2) para la cuarta sección -->
+    <h2>Listas anidadas</h2>
+
+    <!-- Párrafo explicativo -->
+    <p>En HTML nos permite insertar una lista dentro de otra lista, se pueden
+        anidar diferentes tipos de lista de acuerdo al requerimiento
+    </p>
+
+    <!-- 
+      Lista principal ordenada (<ol>): Contiene países numerados.
+    -->
+    <ol>
+        <!-- Primer elemento de la lista principal (Argentina) -->
+        <li>Argentina
+            <!-- 
+              Lista no ordenada (<ul>) anidada dentro del <li> de Argentina.
+              Se usa para mostrar las ciudades de ese país con viñetas.
+            -->
+            <ul>
+                <li>Buenos aires</li>
+                <li>La plata</li>
+                <li>Mendoza</li>
+            </ul>
+        </li> <!-- Cierre del elemento principal de Argentina -->
+
+        <!-- Segundo elemento de la lista principal (España) -->
+        <li>España
+            <!-- Lista anidada con las ciudades de España -->
+            <ul>
+                <li>Barcelona</li>
+                <li>Madrid</li>
+                <li>Sevilla</li>
+            </ul>
+        </li> <!-- Cierre del elemento principal de España -->
+
+        <!-- Tercer elemento de la lista principal (México) -->
+        <li>Mexico
+            <!-- Lista anidada con las ciudades de México -->
+            <ul>
+                <li>Chihuahua</li>
+                <li>Cd. Juarez</li>
+                <li>Hermosillo</li>
+            </ul>
+        </li> <!-- Cierre del elemento principal de México -->
+    </ol>
+</body>
+</html>
